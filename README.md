@@ -1,5 +1,6 @@
 # hj_gen
-HashJing generation 
+HashJing generation. 
+ 
 Solidity контракт, демонстрирующий архитектуру хранения больших SVG через `SSTORE2`.
 
 ```
