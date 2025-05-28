@@ -1,0 +1,141 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint8[2]",
+						"name": "config",
+						"type": "uint8[2]"
+					}
+				],
+				"name": "getSvg",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "leftPtr",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "rightPtr",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "storeLeft",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "storeRight",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"getSvg(uint8[2])": {
+					"params": {
+						"config": "[leftFlag, rightFlag] — 1 = белый, 0 = чёрный"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"getSvg(uint8[2])": {
+					"notice": "Сборка SVG из 2х кусков и инверсия цветов по флагу"
+				},
+				"storeLeft(bytes)": {
+					"notice": "Запись левой половины SVG"
+				},
+				"storeRight(bytes)": {
+					"notice": "Запись правой половины SVG"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ontracts/SvgSplitMandala.sol": "SvgSplitMandala"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ontracts/SSTORE2.sol": {
+			"keccak256": "0x6e3c479eea4a54223a9c3272f5de957fba74d7900a53afd2836a9ca1e8ceaabb",
+			"license": "AGPL-3.0-only 2",
+			"urls": [
+				"bzz-raw://c6640335f4122de757cd21612ff19bbd2e0fb49d479a65067738b326fbc508f4",
+				"dweb:/ipfs/QmeMq2CKiWk75XfQRmS1KbW82resvW1SPzPYKQiAinX7Ja"
+			]
+		},
+		"ontracts/SvgSplitMandala.sol": {
+			"keccak256": "0x158aded4f9d72d8cabff401ca93bfa0da6ac61cf6847c6ecd53ac57b1dbf5620",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5ccd902a3d2de5998c1d6bebc76b28fbba8ce962f44a07619411935b40640b4a",
+				"dweb:/ipfs/QmQTbQmpZ5U8Fi5qNgdxbEHKXz3xFEPH6XcMAZqQefpQX7"
+			]
+		}
+	},
+	"version": 1
+}
