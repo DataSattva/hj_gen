@@ -1,0 +1,100 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getSvg",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "radialTemplatePtr",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "storeTemplate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"getSvg()": {
+					"notice": "Возвращает SVG с заменой одного fill='black' на fill='white'"
+				},
+				"storeTemplate(bytes)": {
+					"notice": "Запись SVG радиального шаблона в SSTORE2"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MandalaSvg.sol": "SvgRadialMandala"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/MandalaSvg.sol": {
+			"keccak256": "0x55d50b9bfef2c62e4cdbe053ad125b600c5f7498c771933949bd157b4538b458",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6f430299c77f85abfa007be6a7896479ad4d73989aac50f8349119b86f66b285",
+				"dweb:/ipfs/QmQv4enkbGGQorV6JpvvSekuAZEzjvDDdyQRcH8Sa2UtD7"
+			]
+		},
+		"contracts/SSTORE2.sol": {
+			"keccak256": "0x6e3c479eea4a54223a9c3272f5de957fba74d7900a53afd2836a9ca1e8ceaabb",
+			"license": "AGPL-3.0-only 2",
+			"urls": [
+				"bzz-raw://c6640335f4122de757cd21612ff19bbd2e0fb49d479a65067738b326fbc508f4",
+				"dweb:/ipfs/QmeMq2CKiWk75XfQRmS1KbW82resvW1SPzPYKQiAinX7Ja"
+			]
+		}
+	},
+	"version": 1
+}
