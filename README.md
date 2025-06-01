@@ -1,7 +1,7 @@
 # hj_gen
 HashJing generation. 
  
-Solidity контракт, демонстрирующий архитектуру хранения больших SVG через `SSTORE2`.
+A Solidity contract demonstrating the architecture for storing large SVGs via `SSTORE2`.
 
 ```
 SvgSplitMandala/
@@ -12,10 +12,10 @@ SvgSplitMandala/
 ├── LICENSE                     ← ???
 ```
 
-Контракт разбит на:
-- `storeLeft(bytes)` — сохраняет левую часть SVG
-- `storeRight(bytes)` — сохраняет правую часть
-- `getSvg([leftFlag, rightFlag])` — собирает SVG и перекрашивает части по флагу (1 = белый, 0 = чёрный)
+The contract is broken down into:
+- `storeLeft(bytes)` — stores the left part of the SVG
+- `storeRight(bytes)` — stores the right part
+- `getSvg([leftFlag, rightFlag])` — assembles the SVG and recolors parts by flag (1 = white, 0 = black)
 
-Контракт создан как часть проекта [HashJing](https://github.com/DataSattva/hashjing), визуализирующего 256-битные хэши как мандалы.
+The contract was created as part of the [HashJing](https://github.com/DataSattva/hashjing) project, which visualizes 256-bit hashes as mandalas.
 
